@@ -5,16 +5,16 @@ sum() повертає суму збережених значень.
 mul() множить збережені значення і повертає результат. */
 
 let calculator = {
-  read() {
-    this.a = +prompt("Enter first value");
-    this.b = +prompt("Enter second value");
-  },
-  sum() {
-    return this.a + this.b;
-  },
-  mul() {
-    return this.a * this.b;
-  },
+    read() {
+        this.a = +prompt("Enter first value");
+        this.b = +prompt("Enter second value");
+    },
+    sum() {
+        return this.a + this.b;
+    },
+    mul() {
+        return this.a * this.b;
+    },
 };
 
 // ===================================================================================
@@ -38,20 +38,20 @@ let ladder = {
 ladder.up().up().down().showStep().down().showStep(); // shows 1 then 0 */
 
 let ladder = {
-  step: 0,
-  up() {
-    this.step++;
-    return this;
-  },
-  down() {
-    this.step--;
-    return this;
-  },
-  showStep: function () {
-    // показує поточний крок
-    alert(this.step);
-    return this;
-  },
+    step: 0,
+    up() {
+        this.step++;
+        return this;
+    },
+    down() {
+        this.step--;
+        return this;
+    },
+    showStep: function () {
+        // показує поточний крок
+        alert(this.step);
+        return this;
+    },
 };
 
 ladder.up().up().down().showStep().down().showStep();

@@ -17,11 +17,11 @@ delete user.name;
 /* Напишіть функцію isEmpty(obj), яка повертає true, якщо об’єкт не має властивості, інакше false. */
 
 function isEmpty(obj) {
-  let isEmpty = true;
-  for (const key in obj) {
-    isEmpty = false;
-  }
-  return isEmpty;
+    let isEmpty = true;
+    for (const key in obj) {
+        isEmpty = false;
+    }
+    return isEmpty;
 }
 
 // ===================================================================================
@@ -38,11 +38,11 @@ let salaries = {
 Якщо об’єкт salaries порожній, то результат має бути 0. */
 
 function sumSalaries(obj) {
-  let sum = 0;
-  for (const key in obj) {
-    sum += obj[key];
-  }
-  return sum;
+    let sum = 0;
+    for (const key in obj) {
+        sum += obj[key];
+    }
+    return sum;
 }
 
 // ===================================================================================
@@ -50,9 +50,9 @@ function sumSalaries(obj) {
 /* Створіть функцію multiplyNumeric(obj), яка примножує всі числові властивості об’єкта obj на 2. */
 
 function multiplyNumeric(obj) {
-  for (const key in obj) {
-    if (typeof obj[key] === "number") {
-      obj[key] *= 2;
+    for (const key in obj) {
+        if (typeof obj[key] === "number") {
+            obj[key] *= 2;
+        }
     }
-  }
 }

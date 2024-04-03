@@ -2,7 +2,7 @@
 
 function A() {}
 function B() {
-  return a;
+    return a;
 }
 
 let a = new A();
@@ -17,16 +17,16 @@ sum() повертає суму цих властивостей.
 mul() повертає результат множення даних властивостей. */
 
 function Calculator() {
-  this.read = function () {
-    this.a = +prompt("Enter first value");
-    this.b = +prompt("Enter second value");
-  };
-  this.sum = function () {
-    return this.a + this.b;
-  };
-  this.mul = function () {
-    return this.a * this.b;
-  };
+    this.read = function () {
+        this.a = +prompt("Enter first value");
+        this.b = +prompt("Enter second value");
+    };
+    this.sum = function () {
+        return this.a + this.b;
+    };
+    this.mul = function () {
+        return this.a * this.b;
+    };
 }
 
 // ===================================================================================
@@ -42,10 +42,10 @@ function Calculator() {
 Нижче ви можете подивитись демонстрацію роботи коду: */
 
 function Accumulator(startingValue) {
-  this.value = startingValue;
-  this.read = function () {
-    this.value += +prompt("value to Add");
-  };
+    this.value = startingValue;
+    this.read = function () {
+        this.value += +prompt("value to Add");
+    };
 }
 
 let acc = new Accumulator(5);

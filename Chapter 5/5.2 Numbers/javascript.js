@@ -23,15 +23,15 @@ Math.round(6.35 * 10) / 10;
 Відвідувач також може зупинити процес, ввівши порожній рядок або натиснувши “CANCEL”. У цьому випадку функція повинна повернути null. */
 
 function readNumber() {
-  let a;
+    let a;
 
-  do {
-    a = prompt("Enter a number", "0");
-  } while (!isFinite(a));
+    do {
+        a = prompt("Enter a number", "0");
+    } while (!isFinite(a));
 
-  if (a === null || a === "") return null;
+    if (a === null || a === "") return null;
 
-  return a;
+    return a;
 }
 
 alert(readNumber());
@@ -43,7 +43,7 @@ alert(readNumber());
 Напишіть функцію random(min, max) для створення випадкового числа з плаваючою крапкою від min до max (не враховуючи max). */
 
 function random(min, max) {
-  return min + Math.random() * (max - min);
+    return min + Math.random() * (max - min);
 }
 
 alert(random(1, 5));
@@ -54,6 +54,6 @@ alert(random(1, 5));
 Будь-яке число з інтервалу min..max повинно з’являтися з однаковою ймовірністю. */
 
 function randomInteger(min, max) {
-  return Math.round(min + Math.random() * (max - min));
+    return Math.round(min + Math.random() * (max - min));
 }
 alert(randomInteger());
